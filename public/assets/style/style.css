@@ -206,6 +206,34 @@ a {
   background: transparent;
 }
 
+.stack-card {
+  padding: 0;
+  display: flex;
+}
+
+.stack-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 0.6rem;
+  align-items: center;
+  justify-items: center;
+  padding: 1.2rem;
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+}
+
+.stack-logos img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
+}
+
+.stack-logos img.simple-icon {
+  filter: invert(1) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
+}
+
 .marquee {
   border-block: 1px solid var(--line);
   overflow: hidden;
@@ -288,6 +316,26 @@ a {
   background: linear-gradient(120deg, #f97316, #ec4899);
 }
 
+.gradient-4 {
+  background: linear-gradient(120deg, #0ea5e9, #22d3ee);
+}
+
+.gradient-5 {
+  background: linear-gradient(120deg, #f59e0b, #ef4444);
+}
+
+.gradient-6 {
+  background: linear-gradient(120deg, #10b981, #84cc16);
+}
+
+.gradient-7 {
+  background: linear-gradient(120deg, #8b5cf6, #ec4899);
+}
+
+.gradient-8 {
+  background: linear-gradient(120deg, #3b82f6, #14b8a6);
+}
+
 .project-body {
   padding: 1.5rem;
   display: grid;
@@ -311,6 +359,32 @@ a {
 .link {
   color: var(--accent);
   font-weight: 600;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: var(--text);
 }
 
 .split {
