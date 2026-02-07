@@ -202,6 +202,21 @@ a {
   z-index: 1;
 }
 
+.feature-list {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .card.outline {
   background: transparent;
 }
