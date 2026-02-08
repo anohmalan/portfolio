@@ -217,6 +217,13 @@ a {
   gap: 0.5rem;
 }
 
+.feature-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+  flex: 0 0 18px;
+}
+
 .card.outline {
   background: transparent;
 }
