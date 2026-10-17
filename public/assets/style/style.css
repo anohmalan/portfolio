@@ -229,31 +229,26 @@ a {
 }
 
 .stack-card {
-  padding: 0;
-  display: flex;
-}
-
-.stack-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
-  gap: 0.6rem;
-  align-items: center;
-  justify-items: center;
   padding: 1.2rem;
-  width: 100%;
-  height: 100%;
-  min-height: 140px;
 }
 
-.stack-logos img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
+.tech-title {
+  margin-bottom: 0.8rem;
 }
 
-.stack-logos img.simple-icon {
-  filter: invert(1) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  color: var(--muted);
+  font-size: 0.78rem;
 }
 
 .marquee {
@@ -356,6 +351,18 @@ a {
 
 .gradient-8 {
   background: linear-gradient(120deg, #3b82f6, #14b8a6);
+}
+
+.gradient-9 {
+  background: linear-gradient(120deg, #22c55e, #0ea5e9);
+}
+
+.gradient-10 {
+  background: linear-gradient(120deg, #f59e0b, #6366f1);
+}
+
+.gradient-11 {
+  background: linear-gradient(120deg, #ef4444, #f59e0b);
 }
 
 .project-body {
