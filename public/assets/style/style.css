@@ -307,6 +307,20 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.projects-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-toggle {
+  min-width: 150px;
+}
+
+.project-card.is-collapsed {
+  display: none;
+}
+
 .project-card {
   background: var(--bg-soft);
   border-radius: 20px;
@@ -541,6 +555,18 @@ a {
 .socials {
   display: flex;
   gap: 1rem;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .reveal {
